@@ -19,9 +19,14 @@
 
 = A tale of position and momenta
 == Summary
-- _Expansion on the upper branch_. Alberto showed that in the large momenta limit the soliton coherent state centered in $r=0$ and with width $alpha$ lives on the upper branch:
+- _Upper branch and symmetry-breaking ansatz_. Alberto showed that in the large momenta limit the soliton coherent state centered in $r=0$ and with width $alpha$ lives on the upper branch:
   $ ket(phi_alpha (0)) = integral d k u_alpha (k) ket(k) $
-  where $ket(k)$ are the most excited eigenstates. Here I derive analitically an expression for the coefficients $u_(alpha)(k)$:
+  where $ket(k)$ are the most excited eigenstates. 
+  The displaced soliton is given by
+  $ ket(phi_alpha (r)) = e^(-i P r) ket(phi_alpha (0)) = integral d k u_alpha (k) e^(-i k r) ket(k) $
+  This band expression is clearly related to the symmetry breaking ansatz $ket(S B)$:
+  $ ket(S B) = integral d r e^(i K r) ket(phi_alpha (r)) = integral d k u_alpha (k) ket(k) integral d r e^(-i(k - K) r) = 2 pi u_alpha (K) ket(K) prop ket(K) $
+- _Expansion on the upper branch_. Here I derive analitically an expression for the coefficients $u_(alpha)(k)$:
 $ |u_alpha (k)|^2 = d_alpha (k - K) $
 $ d_alpha (k) = 1/sqrt(2 pi cal(N) f_2) exp(-1/(2 f_2 cal(N))(k/alpha)^2)(1 - f_3 /(2 f_2^2 cal(N)) k/alpha + f_3 /(6 f_2^3 cal(N)^2)(k/alpha)^3) $
 - _Soliton's mass_. In my thesis I expanded "semiclassically" the following averages:
